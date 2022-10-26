@@ -1,57 +1,48 @@
-# Empezar con Creare-React-App
+# Prueba-Tecnica SIER
 
-Este proyecto fue creado con [Create React App](https://github.com/facebook/create-react-app).
+# Descripción 
+Aplicación web creada en React.js para el montaje de una tabla de datos solicitado a un servicio API REST, incorporando diversas funcionalidades para filtrar, editar, agregar y organizar los datos obtenidos del Backend.  Se utilizaron tecnologías de Frontend tales como REACT, Material UI, Hooks, React Router y Axios para las peticiones asíncronas. 
 
-## Scripts Disponibles
+# Contenido 
+Este proyecto tiene una sola rama, en las cuales se encontrarán los archivos para su despliegue e inizialización. 
 
-En el directorio del proyecto, puedes correr el comando: 
+# Demostración 
+Se desplegó el proyecto en los servidores de Netlify  <a href="https://anabelisa.co/readme/">Demostración del Proyecto</a>
+
+# Instalación 
+Correr el siguiente comando en la terminal 
 
 ### `npm start`
 
-Corre el proyecto en el ambiente de desarrollo.\
-Abre [http://localhost:3000](http://localhost:3000) para permitir la visualización en el navegador.
+La aplicación se abrira en un ambiente de desarrollo en tu navegar desde (http://localhost:3000)
 
-La pagina se actualizará tan pronto detecte un cambio en los recursos.\
-También podrás visualizar los errores en la consola. 
+La página y el Virtual DOM se actualizarán tan pronto detecte un cambio en la rama.
+Los errores se podrán visualizar en la consola/terminal. 
 
-### `npm test`
+# Errores 
+- Al hacer la petición 'DELETE' con ayuda de axios a la API https://jsonplaceholder.typicode.com/posts/1 , aunque se ejecutaba con satisfacción la petición (Status Code: >200 ), el servidor no actualiza los datos impidiendo visualizar el evento eliminar:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img src="https://i.imgur.com/A0yfkFg.jpg" /> 
+- Al hacer la petición 'POST' para actualizar y añadir un recurso en la API, aunque se ejecuta con satisfacción la petición (Status Code: >200 ), el servidor no actualiza los recursos. Se renderizará el primer post que se guarde, puesto que este queda guardado en el estado del componente con ayuda de Hooks. 
 
-### `npm run build`
+<img src="https://i.imgur.com/xLU0WIp.jpg" />
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Instrucciones de Eventos
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Para el filtrado y organización, pasar el mouse por alguna columna para obtener las distintas formas de despliegue de la información. 
+- Para actualizaciones, hacer doble click en el texto que se desea cambiar. 
+- Para añadir un nuevo post, referirte al botón "Añadir un nuevo Post" y rellenar el formulario para su inicialización en la tabla de datos. 
+- Para eliminar un post, referirse al botón "x". 
+- Para observar los comentarios, referirse al botón "Ver Comentarios" el cual desplegará los comentarios en una nueva tabla de datos. 
+- La paginación y navegación se puede lograr al dar click en las flechas de la parte inferior de la tabla de datos. Utilice "<" para retroceder y ">" para acceder a la   siguiente página de datos. 
 
-### `npm run eject`
+# Previsualización 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<img src="https://i.imgur.com/F2HvKXC.jpg" />
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
 ### Making a Progressive Web App
 
